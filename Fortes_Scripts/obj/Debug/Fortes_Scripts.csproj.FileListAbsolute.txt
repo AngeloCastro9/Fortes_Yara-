@@ -12,3 +12,17 @@ C:\Users\acastro\Desktop\Fortes_Scripts\Fortes_Scripts\Fortes_Scripts\obj\Debug\
 C:\Users\acastro\Desktop\Fortes_Scripts\Fortes_Scripts\Fortes_Scripts\obj\Debug\Fortes_Scripts.csproj.GenerateResource.cache
 C:\Users\acastro\Desktop\Fortes_Scripts\Fortes_Scripts\Fortes_Scripts\obj\Debug\Fortes_Scripts.exe
 C:\Users\acastro\Desktop\Fortes_Scripts\Fortes_Scripts\Fortes_Scripts\obj\Debug\Fortes_Scripts.pdb
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\bin\Debug\Fortes_Scripts.exe.config
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\bin\Debug\Fortes_Scripts.exe
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\bin\Debug\Fortes_Scripts.pdb
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\Fortes_Scripts.csprojAssemblyReference.cache
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\MainWindow.g.cs
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\App.g.cs
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\Fortes_Scripts_MarkupCompile.cache
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\Fortes_Scripts_MarkupCompile.lref
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\MainWindow.baml
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\Fortes_Scripts.g.resources
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\Fortes_Scripts.Properties.Resources.resources
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\Fortes_Scripts.csproj.GenerateResource.cache
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\Fortes_Scripts.exe
+C:\Users\acastro\Desktop\Fortes_Yara-\Fortes_Scripts\obj\Debug\Fortes_Scripts.pdb

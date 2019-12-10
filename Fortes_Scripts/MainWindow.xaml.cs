@@ -41,7 +41,7 @@ namespace Fortes_Scripts
             StreamWriter sw = new StreamWriter(caminho);
             sw.WriteLine("[Startup]" + "\n" +
                "ProgramFolder = A:\\Exe\\AC" + "\n" +
-               "DataFolder = D:\\" + DataFolder.Text + "\\" + Databasefile.Text + "AC" + "\n)");
+               "DataFolder = D:\\" + DataFolder.Text + "\\" + Databasefile.Text + "_AC" + "\n)");
             sw.Close();
         }
     }
