@@ -37,37 +37,64 @@ namespace Fortes_Scripts
         {
             if (ClientName.Text != "")
             {
-                //A:\CloudUp\CloudUpCmd
-                string folder = @"C:\" + ClientName.Text; //nome do diretorio a ser criado
-                if (!Directory.Exists(folder))
+                if (DataFolder.Text != "")
                 {
-                    Directory.CreateDirectory(folder);
-                }
+                    if (Databasefile.Text != "")
+                    {
+                        if (Username.Text != "")
+                        {
+                            if (Password.Text != "")
+                            {
 
-                String caminho = folder + "\\" + ClientName.Text + ".ini"; //Qualquer caminho
-                if (!System.IO.File.Exists(caminho))
-                    System.IO.File.Create(caminho).Close();
-                StreamWriter sw = new StreamWriter(caminho);
-                sw.WriteLine("[Startup]" + "\n" +
-                   "ProgramFolder = A:\\Exe\\AC" + "\n" +
-                   "DataFolder = D:\\" + DataFolder.Text + "\\" + Databasefile.Text + "_AC" + "\n" +
-                   "DatabaseFile = 127.0.0.1:" + Databasefile.Text + "_AC" + "\n" +
-                   "DriverName = MSSQL" + "\n" +
-                   "UserName = " + Username.Text + ".sql" + "\n" +
-                   "Password = " + Password.Text + "\n" +
-                   "\n" +
-                   "[Settings]" + "\n" +
-                   "ContinueUpdateAfterCrashRecovery = True" + "\n" +
-                   "AllowOldBackupsRestoration = False" + "\n" +
-                   "SkipWarnings = True" + "\n" +
-                   "ByPassInUseCheck = True" + "\n" +
-                   "RetryOnDatabaseInUse = False" + "\n" +
-                   "\n" +
-                   "[Backup]" + "\n" +
-                   "SkipBackupDatabase = True ");
-                sw.Close();
+                                //A:\CloudUp\CloudUpCmd
+                                string folder = @"C:\" + ClientName.Text; //nome do diretorio a ser criado
+                                if (!Directory.Exists(folder))
+                                {
+                                    Directory.CreateDirectory(folder);
+                                }
+
+                                String caminho = folder + "\\" + ClientName.Text + ".ini"; //Qualquer caminho
+                                if (!System.IO.File.Exists(caminho))
+                                {
+                                    System.IO.File.Create(caminho).Close();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Já existe uma pasta criada com o nome " + ClientName.Text);
+                                }
+                                    StreamWriter sw = new StreamWriter(caminho);
+                                sw.WriteLine("[Startup]" + "\n" +
+                                   "ProgramFolder = A:\\Exe\\AC" + "\n" +
+                                   "DataFolder = D:\\" + DataFolder.Text + "\\" + Databasefile.Text + "_AC" + "\n" +
+                                   "DatabaseFile = 127.0.0.1:" + Databasefile.Text + "_AC" + "\n" +
+                                   "DriverName = MSSQL" + "\n" +
+                                   "UserName = " + Username.Text + ".sql" + "\n" +
+                                   "Password = " + Password.Text + "\n" +
+                                   "\n" +
+                                   "[Settings]" + "\n" +
+                                   "ContinueUpdateAfterCrashRecovery = True" + "\n" +
+                                   "AllowOldBackupsRestoration = False" + "\n" +
+                                   "SkipWarnings = True" + "\n" +
+                                   "ByPassInUseCheck = True" + "\n" +
+                                   "RetryOnDatabaseInUse = False" + "\n" +
+                                   "\n" +
+                                   "[Backup]" + "\n" +
+                                   "SkipBackupDatabase = True ");
+                                sw.Close();
+                            } else {
+                                MessageBox.Show("Senha não informado");
+                            }
+                        } else {
+                            MessageBox.Show("Usuário não informado");
+                        }
+                    } else {
+                        MessageBox.Show("Banco de dados não informado");
+                    }
+                } else {
+                    MessageBox.Show("Nome da pasta não informado");
+                }
             } else {
-                MessageBox.Show("Nome do cliente não foi informado");
+                MessageBox.Show("Nome do cliente não informado");
             }
         }
     }
